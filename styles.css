@@ -264,30 +264,30 @@ fa.gem {
   }
 
   .main__content h1 {
-    font-size: 2.5rem; 
+    font-size: 2.2rem; 
     margin-top: 3rem;
   }
 
   .about__content p {
     
-    font-size: 2.5rem; 
+    font-size: 2.2rem; 
     margin-top: 1rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .about__content h1 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     margin-top: 3rem;
   }
 
   .about__content p {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     margin-top: 1.5rem;
   }
   .about__btn {
     padding: 12px 36px;
-    margin: 2.5rem 0;
+    margin: 2.2rem 0;
   }
 }
 
