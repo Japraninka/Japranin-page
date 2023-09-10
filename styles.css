@@ -5,6 +5,10 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+body {
+  background-color: #91c840;
+}
+
 .navbar {
   background: #91c840;
   height: 80px;
@@ -141,32 +145,37 @@ fa.gem {
 }
 
 /*Hero section*/
-
-.main {
-  background-color: rgb(181, 201, 184); /*zameni ovo je sa strane belo*/
-}
-.main__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.hero__img {
+  background-image: linear-gradient(
+    /* ovo mozs promeniti to je da zatamni sliku*/ to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgb(20, 20, 20, 0.5) 100%
+  ),
+  url("/images/pozadina.jpg");
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  text-align: center; /* Center text horizontally */
+  height: 100vh; /* Make the hero section the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: top; /* Center text vertically */
   align-items: center;
-  justify-self: center;
-  margin: 0 auto;
-  height: 100vh;
-  background-color: rgb(181, 201, 184); /*zameni*/
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  padding: 0 50px;
 }
 
-.main__content h1 {
-  /*mozes isto ovako p*/
-  font-size: 3rem; /*ovde je japranin vece izabre sta hoces*/
-  background-color: #543222;
+.hero__content {
+  color:rgb(174, 184, 222);
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.hero__content h1 {
+  font-size: 3rem;
+  margin-right: 2rem;
+  font-weight: 700;
   background-image: linear-gradient(
     to top,
-    #4a3126 0%,
-    #c1876a 100%
+    rgb(22, 56, 192) 0%,
+    rgb(184, 194, 231) 100%
   ); /*ovo i gornji moraju biti isti zameni boje*/
   background-size: 100%;
   -webkit-background-clip: text;
@@ -175,17 +184,16 @@ fa.gem {
   -moz-text-fill-color: transparent;
 }
 
-.main__content p {
+.hero__content p {
   margin-top: 1rem;
   margin-right: 2rem;
   font-size: 2.2rem;
   font-weight: 700;
-  background-color: #543222;
   background-image: linear-gradient(
-    to top,
-    #5d3d2e 0%,
-    #946651 100%
-  ); /*ovo i gornji moraju biti isti zameni boje*/
+    to left,
+    rgb(20, 65, 246) 0%,
+    rgb(165, 182, 245) 100%
+  ); 
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -193,7 +201,7 @@ fa.gem {
   -moz-text-fill-color: transparent;
 }
 
-.main__btn {
+.hero__btn {
   font-size: 1.1rem;
   background-image: linear-gradient(
     to top,
@@ -211,45 +219,40 @@ fa.gem {
   outline: none;
 }
 
-.main__btn a {
+.hero__btn a {
   position: relative;
   z-index: 2;
   color: black;
   text-decoration: none;
 }
 
-.main__btn:after {
+.hero__btn:after {
   position: absolute;
   content: " ";
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #91c840;
+  background-image: linear-gradient(
+    to top,
+    #91c840 0%,
+    rgb(201, 208, 235) 100%
+  );
   transition: all 0.35s;
   border-radius: 4px;
 }
 
-.main__btn:hover {
+.hero__btn:hover {
   color: #91c840;
 }
 
-.main__btn:hover:after {
-  width: 100%;
-}
-
-.main__img--container {
-  text-align: center;
-}
-
-#main_img {
-  height: 100%;
+.hero__btn:hover:after {
   width: 100%;
 }
 
 /*Mobile responsive*/
 @media screen and (max-width: 768px) {
-  .main__container {
+  .hero__img {
     display: grid;
     grid-template-columns: auto;
     align-items: center;
@@ -258,17 +261,17 @@ fa.gem {
     margin: 0 auto;
     height: 130vh;
   }
-  .main__content {
+  .hero__content {
     text-align: center;
     margin-bottom: 4rem;
   }
 
-  .main__content h1 {
+  .hero__content h1 {
     font-size: 2.2rem; 
     margin-top: 3rem;
   }
 
-  .main__content p {
+  .hero__content p {
     
     font-size: 2.2rem; 
     margin-top: 1rem;
@@ -276,52 +279,55 @@ fa.gem {
 }
 
 @media screen and (max-width: 480px) {
-  .main__content h1 {
-    font-size: 1.8rem;
+  .hero__content h1 {
+    font-size: 2rem;
     margin-top: 3rem;
+
   }
 
-  .main__content p {
-    font-size: 1.8rem;
+  .hero__content p {
+    font-size: 2rem;
     margin-top: 1.5rem;
+
   }
-  .main__btn {
-    padding: 1px 30px;
+  .hero__btn {
+    padding: 10px 30px;
     margin: 2rem 0;
   }
 }
 
 /*Services CSS*/
 .services {
-  background-color: rgb(181, 201, 184);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 10rem 0;
+  padding: 5rem 0;
+  background-color: #91c840;
 }
 
 .services h1 {
-  background-color: #282db9;
-  background-image: linear-gradient(
-    to right,
-    rgb(35, 62, 173) 0%,
-    rgb(77, 102, 203) 100%
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  /*margin-top: 3rem;*/
+  font-size: 50px;
+  color: #000000;
   margin-bottom: 5rem;
-  font-size: 2.5rem;
+  position: relative;
 }
+
+.services h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #282db9;
+}
+
 .services__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: 1fr  1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .services__card {
@@ -332,8 +338,8 @@ fa.gem {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient( /* ovo mozs promeniti to je da zatamni sliku*/
-      to bottom,
+  background-image: linear-gradient(
+      /* ovo mozs promeniti to je da zatamni sliku*/ to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
@@ -344,7 +350,6 @@ fa.gem {
   transition: 0.3s ease-in;
 }
 
-
 .services__card:nth-child(2) {
   background-image: url("/images/haus.jpg");
   background-size: cover;
@@ -352,14 +357,12 @@ fa.gem {
   color: #ffffff;
 }
 
-
 .services__card:nth-child(3) {
   background-image: url("/images/cleaning.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
-
 
 .services__card:nth-child(4) {
   background-image: url("/images/moving_card.jpg");
@@ -385,41 +388,37 @@ fa.gem {
 .services__card h2 {
   text-align: center;
 }
-.services__btn{
+.services__btn {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-
 }
 
-.services__card button{
-color: #000000;
-padding: 14px 24px;
-border: none;
-outline: none;
-border-radius: 4px;
-background-color: #946651;
-font-size: 1rem;
-background-image: linear-gradient(
-  to top,
-  rgb(36, 70, 207) 0%,
-  rgb(128, 144, 207) 100%
-);
-position: absolute;
-top: 340px;
-right: 30px;
-font-size: 1rem;
-font-weight: 500;
-
+.services__card button {
+  color: #000000;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #946651;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    to top,
+    rgb(36, 70, 207) 0%,
+    rgb(128, 144, 207) 100%
+  );
+  position: absolute;
+  top: 340px;
+  right: 30px;
+  font-size: 1rem;
+  font-weight: 500;
 }
-
 
 .services__card button:hover {
   cursor: pointer;
 }
 
 .services__card:hover {
-
   transform: scale(1.075);
   transition: 0.2s ease-in;
 }
@@ -428,14 +427,17 @@ font-weight: 500;
   .services__wrapper {
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
 @media screen and (max-width: 758px) {
   .services__wrapper {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
   }
-
+  .services h1 {
+    font-size: 2rem; 
+    margin-bottom: 3rem; 
+  }
+  
 }
 
 /*Footer CSS*/
@@ -446,6 +448,7 @@ font-weight: 500;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 #footer__logo {
@@ -570,7 +573,6 @@ font-weight: 500;
   flex-direction: column;
   text-align: center;
   margin: 20px auto;
-
 }
 
 .heading__about h1 {
@@ -585,7 +587,7 @@ font-weight: 500;
   width: 100%;
   height: 4px;
   display: block;
-  margin:  0 auto;
+  margin: 0 auto;
   background-color: #282db9;
 }
 
@@ -612,10 +614,9 @@ font-weight: 500;
   flex: 1;
   margin-right: 40px;
   overflow: hidden;
-
 }
 
-.about__img img{
+.about__img img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -626,12 +627,12 @@ font-weight: 500;
   flex: 1;
 }
 
-.about__content h2{
+.about__content h2 {
   font-size: 25px;
   margin-bottom: 15px;
-  color:#282db9;
+  color: #282db9;
 }
-.about__content p{
+.about__content p {
   font-size: 18px;
   line-height: 1.5;
   color: #000000;
@@ -641,18 +642,15 @@ font-weight: 500;
 @media screen and (max-width: 768px) {
   .heading__about {
     padding: 0px 20px;
-
   }
-  .heading__about h1{
-    font-size:36px ;
-
+  .heading__about h1 {
+    font-size: 36px;
   }
-  .heading__about p{
-    font-size: 17px ;
+  .heading__about p {
+    font-size: 17px;
     margin-bottom: 4px;
-    
   }
-  .about__container{
+  .about__container {
     padding: 0px;
   }
   .about {
@@ -663,11 +661,10 @@ font-weight: 500;
     margin-right: 0px;
     margin-bottom: 25px;
   }
-  
 }
 
-
 /* usluge css*/
+
 
 .heading__usluge {
   width: 90%;
@@ -677,7 +674,6 @@ font-weight: 500;
   flex-direction: column;
   text-align: center;
   margin: 20px auto;
-
 }
 
 .heading__usluge h1 {
@@ -692,7 +688,7 @@ font-weight: 500;
   width: 100%;
   height: 4px;
   display: block;
-  margin:  0 auto;
+  margin: 0 auto;
   background-color: #282db9;
 }
 
@@ -706,6 +702,7 @@ font-weight: 500;
   width: 90%;
   margin: 0 auto;
   padding: 10px 20px;
+  
 }
 
 .usluge {
@@ -713,6 +710,7 @@ font-weight: 500;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  
 }
 
 .usluge__img {
@@ -720,10 +718,9 @@ font-weight: 500;
   margin-right: 40px;
   overflow: hidden;
   margin-bottom: 40px;
-
 }
 
-.usluge__img img{
+.usluge__img img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -734,12 +731,12 @@ font-weight: 500;
   flex: 1;
 }
 
-.usluge__content h2{
+.usluge__content h2 {
   font-size: 35px;
   margin-bottom: 15px;
-  color:#282db9;
+  color: #282db9;
 }
-.usluge__content p{
+.usluge__content p {
   font-size: 18px;
   line-height: 1.5;
   color: #000000;
@@ -749,18 +746,15 @@ font-weight: 500;
 @media screen and (max-width: 768px) {
   .heading__usluge {
     padding: 0px 20px;
-
   }
-  .heading__usluge h1{
-    font-size:36px ;
-
+  .heading__usluge h1 {
+    font-size: 36px;
   }
-  .heading__usluge p{
-    font-size: 17px ;
+  .heading__usluge p {
+    font-size: 17px;
     margin-bottom: 4px;
-    
   }
-  .usluge__container{
+  .usluge__container {
     padding: 0px;
   }
   .usluge {
@@ -771,11 +765,9 @@ font-weight: 500;
     margin-right: 0px;
     margin-bottom: 25px;
   }
-  
 }
 
 /*Galerie css*/
-
 
 .heading__galerie {
   width: 90%;
@@ -785,7 +777,6 @@ font-weight: 500;
   flex-direction: column;
   text-align: center;
   margin: 20px auto;
-
 }
 
 .heading__galerie h1 {
@@ -800,7 +791,7 @@ font-weight: 500;
   width: 100%;
   height: 4px;
   display: block;
-  margin:  0 auto;
+  margin: 0 auto;
   background-color: #282db9;
 }
 
@@ -811,7 +802,6 @@ font-weight: 500;
 }
 
 .galerie {
-  background-color: rgb(181, 201, 184);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -838,8 +828,8 @@ font-weight: 500;
 }
 .galerie__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 1fr  1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .galerie__card {
@@ -850,8 +840,8 @@ font-weight: 500;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient( /* ovo mozs promeniti to je da zatamni sliku*/
-      to bottom,
+  background-image: linear-gradient(
+      /* ovo mozs promeniti to je da zatamni sliku*/ to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
@@ -862,8 +852,6 @@ font-weight: 500;
   transition: 0.3s ease-in;
 }
 
-
-
 .galerie__card:nth-child(3) {
   background-image: url("/images/2.jpeg");
   background-size: cover;
@@ -871,14 +859,12 @@ font-weight: 500;
   color: #ffffff;
 }
 
-
 .galerie__card:nth-child(4) {
   background-image: url("/images/3.jpeg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
-
 
 .galerie__card:nth-child(11) {
   background-image: url("/images/4.jpeg");
@@ -946,41 +932,37 @@ font-weight: 500;
 .galerie__card h2 {
   text-align: center;
 }
-.galerie__btn{
+.galerie__btn {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-
 }
 
-.galerie__card button{
-color: #000000;
-padding: 14px 24px;
-border: none;
-outline: none;
-border-radius: 4px;
-background-color: #946651;
-font-size: 1rem;
-background-image: linear-gradient(
-  to top,
-  rgb(36, 70, 207) 0%,
-  rgb(128, 144, 207) 100%
-);
-position: absolute;
-top: 340px;
-right: 30px;
-font-size: 1rem;
-font-weight: 500;
-
+.galerie__card button {
+  color: #000000;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #946651;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    to top,
+    rgb(36, 70, 207) 0%,
+    rgb(128, 144, 207) 100%
+  );
+  position: absolute;
+  top: 340px;
+  right: 30px;
+  font-size: 1rem;
+  font-weight: 500;
 }
-
 
 .galerie__card button:hover {
   cursor: pointer;
 }
 
 .galerie__card:hover {
-
   transform: scale(1.075);
   transition: 0.2s ease-in;
 }
@@ -989,12 +971,54 @@ font-weight: 500;
   .galerie__wrapper {
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
 @media screen and (max-width: 758px) {
   .galerie__wrapper {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
   }
 }
 
+/*Contact us css*/
+
+.contact__forum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+input,
+textarea,
+button {
+  margin: 4px 0;
+  padding: 15px;
+}
+
+.heading__contact {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.heading__contact h1 {
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 25px;
+  position: relative;
+}
+.heading__contact h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #282db9;
+}
