@@ -246,6 +246,7 @@ fa.gem {
   height: 100%;
   width: 100%;
 }
+
 /*Mobile responsive*/
 @media screen and (max-width: 768px) {
   .main__container {
@@ -285,8 +286,8 @@ fa.gem {
     margin-top: 1.5rem;
   }
   .main__btn {
-    padding: 12px 36px;
-    margin: 2.2rem 0;
+    padding: 1px 30px;
+    margin: 2rem 0;
   }
 }
 
@@ -772,3 +773,228 @@ font-weight: 500;
   }
   
 }
+
+/*Galerie css*/
+
+
+.heading__galerie {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+
+}
+
+.heading__galerie h1 {
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 25px;
+  position: relative;
+}
+.heading__galerie h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin:  0 auto;
+  background-color: #282db9;
+}
+
+.heading__galerie p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+.galerie {
+  background-color: rgb(181, 201, 184);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+.galerie h1 {
+  background-color: #282db9;
+  background-image: linear-gradient(
+    to right,
+    rgb(35, 62, 173) 0%,
+    rgb(77, 102, 203) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  /*margin-top: 3rem;*/
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+.galerie__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr  1fr 1fr;
+}
+
+.galerie__card {
+  margin: 10px;
+  height: 425px;
+  width: 300px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient( /* ovo mozs promeniti to je da zatamni sliku*/
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(20, 20, 20, 0.5) 100%
+    ),
+    url("/images/1.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+  transition: 0.3s ease-in;
+}
+
+
+
+.galerie__card:nth-child(3) {
+  background-image: url("/images/2.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+
+.galerie__card:nth-child(4) {
+  background-image: url("/images/3.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+
+.galerie__card:nth-child(11) {
+  background-image: url("/images/4.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.galerie__card:nth-child(5) {
+  background-image: url("/images/5.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.galerie__card:nth-child(6) {
+  background-image: url("/images/6.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.galerie__card:nth-child(7) {
+  background-image: url("/images/7.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.galerie__card:nth-child(8) {
+  background-image: url("/images/8.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.galerie__card:nth-child(9) {
+  background-image: url("/images/9.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.galerie__card:nth-child(10) {
+  background-image: url("/images/10.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.galerie__card:nth-child(2) {
+  background-image: url("/images/11.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.galerie__card:nth-child(12) {
+  background-image: url("/images/12.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.galerie__card h2 {
+  text-align: center;
+}
+.galerie__btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+
+}
+
+.galerie__card button{
+color: #000000;
+padding: 14px 24px;
+border: none;
+outline: none;
+border-radius: 4px;
+background-color: #946651;
+font-size: 1rem;
+background-image: linear-gradient(
+  to top,
+  rgb(36, 70, 207) 0%,
+  rgb(128, 144, 207) 100%
+);
+position: absolute;
+top: 340px;
+right: 30px;
+font-size: 1rem;
+font-weight: 500;
+
+}
+
+
+.galerie__card button:hover {
+  cursor: pointer;
+}
+
+.galerie__card:hover {
+
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+}
+
+@media screen and (max-width: 1000px) {
+  .galerie__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media screen and (max-width: 758px) {
+  .galerie__wrapper {
+    grid-template-columns: 1fr ;
+  }
+}
+
