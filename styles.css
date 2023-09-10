@@ -277,12 +277,12 @@ fa.gem {
 
 @media screen and (max-width: 480px) {
   .about__content h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 3rem;
   }
 
   .about__content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 1.2rem;
   }
   .about__btn {
