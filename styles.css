@@ -246,7 +246,6 @@ fa.gem {
   height: 100%;
   width: 100%;
 }
-
 /*Mobile responsive*/
 @media screen and (max-width: 768px) {
   .main__container {
@@ -276,16 +275,16 @@ fa.gem {
 }
 
 @media screen and (max-width: 480px) {
-  .about__content h1 {
-    font-size: 1rem;
+  .main__content h1 {
+    font-size: 1.7rem;
     margin-top: 3rem;
   }
 
-  .about__content p {
-    font-size: 1rem;
-    margin-top: 1.2rem;
+  .main__content p {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
   }
-  .about__btn {
+  .main__btn {
     padding: 12px 36px;
     margin: 2.2rem 0;
   }
