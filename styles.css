@@ -823,7 +823,7 @@ fa.gem {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   /*margin-top: 3rem;*/
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   font-size: 2.5rem;
 }
 .galerie__wrapper {
@@ -841,7 +841,7 @@ fa.gem {
   justify-content: center;
   flex-direction: column;
   background-image: linear-gradient(
-      /* ovo mozs promeniti to je da zatamni sliku*/ to bottom,
+     to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
@@ -851,79 +851,133 @@ fa.gem {
   color: #ffffff;
   transition: 0.3s ease-in;
 }
+.galerie__card:nth-child(2) {
+  background-image: linear-gradient(
+    to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgb(20, 20, 20, 0.5) 100%
+   ),
+   url("/images/2.jpeg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
 
 .galerie__card:nth-child(3) {
-  background-image: url("/images/2.jpeg");
+  background-image: linear-gradient(
+    to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgb(20, 20, 20, 0.5) 100%
+   ),
+   url("/images/3.jpeg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
 
 .galerie__card:nth-child(4) {
-  background-image: url("/images/3.jpeg");
-  background-size: cover;
-  position: relative;
-  color: #ffffff;
-}
-
-.galerie__card:nth-child(11) {
-  background-image: url("/images/4.jpeg");
+  background-image: linear-gradient(
+    to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgb(20, 20, 20, 0.5) 100%
+   ),
+   url("/images/4.jpeg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
 
 .galerie__card:nth-child(5) {
-  background-image: url("/images/5.jpeg");
+  background-image: linear-gradient(
+    to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgb(20, 20, 20, 0.5) 100%
+   ),
+  url("/images/5.jpeg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
 
 .galerie__card:nth-child(6) {
-  background-image: url("/images/6.jpeg");
+  background-image: linear-gradient(
+    to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgb(20, 20, 20, 0.5) 100%
+   ),
+   url("/images/6.jpeg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
 
 .galerie__card:nth-child(7) {
-  background-image: url("/images/7.jpeg");
+  background-image: linear-gradient(
+    to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgb(20, 20, 20, 0.5) 100%
+   ),
+   url("/images/7.jpeg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
 
 .galerie__card:nth-child(8) {
-  background-image: url("/images/8.jpeg");
+  background-image: linear-gradient(
+    to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgb(20, 20, 20, 0.5) 100%
+   ),
+   url("/images/8.jpeg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
 
 .galerie__card:nth-child(9) {
-  background-image: url("/images/9.jpeg");
+  background-image: linear-gradient(
+    to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgb(20, 20, 20, 0.5) 100%
+   ),
+   url("/images/9.jpeg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
 
 .galerie__card:nth-child(10) {
-  background-image: url("/images/10.jpeg");
+  background-image: linear-gradient(
+    to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgb(20, 20, 20, 0.5) 100%
+   ),
+   url("/images/10.jpeg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
 
-.galerie__card:nth-child(2) {
-  background-image: url("/images/11.jpeg");
+.galerie__card:nth-child(11) {
+  background-image: linear-gradient(
+    to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgb(20, 20, 20, 0.5) 100%
+   ),
+  url("/images/11.jpeg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
 
 .galerie__card:nth-child(12) {
-  background-image: url("/images/12.jpeg");
+  background-image: linear-gradient(
+    to bottom,
+     rgba(0, 0, 0, 0) 0%,
+     rgb(20, 20, 20, 0.5) 100%
+   ),
+   url("/images/12.jpeg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -981,22 +1035,6 @@ fa.gem {
 
 /*Contact us css*/
 
-.contact__forum {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 10rem 0;
-}
-
-input,
-textarea,
-button {
-  margin: 4px 0;
-  padding: 15px;
-}
-
 .heading__contact {
   width: 90%;
   display: flex;
@@ -1021,4 +1059,70 @@ button {
   display: block;
   margin: 0 auto;
   background-color: #282db9;
+}
+
+.form {
+  grid-area: form;
+}
+
+.info {
+  grid-area: info;
+}
+
+.map {
+  grid-area: map;
+}
+
+.contact {
+  padding: 40px;
+  background-color: #282db9;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+
+}
+
+.box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas: 
+  "form info"
+  "form map";
+  grid-gap: 20px;
+
+}
+.contact h3 {
+  color:#ffffff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/*form*/
+
+.formBox {
+  position: relative;
+  width: 100%;
+
+}
+
+
+.formBox .row50 {
+  display: flex;
+  gap: 20px;
+
+  
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.formBox .row100 .inputBox {
+  width: 100%;
+
 }
