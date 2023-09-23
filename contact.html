@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Japranin</title>
   <link rel="stylesheet" href="styles.css" />
-  
+
   <script src="https://kit.fontawesome.com/0f832d28d8.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="/images/logo_krug.png" type="image/x-icon">
+  <link rel="icon" href="/images/logo_krug.png" type="image/x-icon" />
 
   <script src="contact.js" type="text/javascript"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -19,54 +19,77 @@
     })();
   </script>
 
-<script src="https://kit.fontawesome.com/0f832d28d8.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0f832d28d8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!--Navbar Section-->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <img src="images/logo-no-background.png" alt="pic" id="navbar__logo" />
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links"> Home </a>
-          </li>
-          <li class="navbar__item">
-            <a href="/services.html" class="navbar__links"> Dienstleistungen </a>
-          </li>
-           
-          <li class="navbar__item">
-            <a href="/gallery.html" class="navbar__links"> Galerie </a>
-          </li> 
-          <li class="navbar__item">
-            <a href="/contact.html" class="navbar__links">Kontakt</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/about.html" class="navbar__links"> Über uns </a>
-          </li>
-        </ul>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <img src="images/logo-no-background.png" alt="pic" id="navbar__logo" />
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </nav>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/" class="navbar__links"> Home </a>
+        </li>
+        <li class="navbar__item">
+          <a href="/services.html" class="navbar__links">
+            Dienstleistungen
+          </a>
+        </li>
 
+        <li class="navbar__item">
+          <a href="/gallery.html" class="navbar__links"> Galerie </a>
+        </li>
+        <li class="navbar__item">
+          <a href="/contact.html" class="navbar__links">Kontakt</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/about.html" class="navbar__links"> Über uns </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-  <!--Contact us Section 33492savoysto-->
+  <!--Contact info-->
+  <section class="contact">
+    <div class="contact__container">
+      <h2>Kontakt</h2>
 
-  <div class="heading__contact">
-    <h1>Kontakt</h1>
-  </div>
+      <div class="contact__wrapper">
+        <div class="contact__form">
+          <div class="form__group">
+            <input type="text" id="name" placeholder="Name" required /> <br />
+          </div>
+          <div class="form__group">
+            <input type="text" id="email" placeholder="E-mail" required />
+            <br />
+          </div>
+          <div class="form__group">
+            <input type="text" id="number" placeholder="Telefonnummer" required />
+            <br />
+          </div>
+          <div class="form__group">
+            <textarea id="message" placeholder="Nachricht" required></textarea>
+          </div>
 
-  <div class="contact__forum">
-    <input type="text" id="name" placeholder="Name" required /> <br/>
-    <input type="text" id="email" placeholder="E-mail" required /> <br/>
-    <input type="text" id="number" placeholder="Telefonnummer" required /> <br/>
-    <textarea id="message" placeholder="Nachricht" required></textarea>
-    <button onclick="sendMail()">Senden</button>
-  </div>
+          <button onclick="sendMail()">Senden</button>
+        </div>
+
+        <div class="contact__info">
+          <h3>OUR INFO</h3>
+          <p>E-mail: Japraninbiz@gmail.com</p>
+          <p>Telefonnummer: +49 172 9455169</p>
+          <p>Montag - Sonntag: 24 Stunden</p>
+          <p>Heilbronn und 100km</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer Section-->
 
@@ -95,6 +118,7 @@
         <div class="footer__link--items">
           <h1>Social Media</h1>
           <a href="https://www.instagram.com/japraninnn/">Instagram</a>
+
           <a href="https://www.facebook.com/profile.php?id=100093254499331">Facebook</a>
         </div>
       </div>
