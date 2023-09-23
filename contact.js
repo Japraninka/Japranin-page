@@ -1,10 +1,23 @@
-
 function sendMail() {
+    // Get the values of the input fields
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var number = document.getElementById("number").value;
+    var message = document.getElementById("message").value;
+
+    // Check if any of the required fields is empty
+    if (!name || !email || !number || !message) {
+        alert("Bitte füllen Sie alle Pflichtfelder aus.");
+        return;
+    }
+
+
+    // All required fields are filled, proceed with sending the email
     var params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        number: document.getElementById("number").value,
-        message: document.getElementById("message").value, // Corrected variable name
+        name: name,
+        email: email,
+        number: number,
+        message: message,
     };
 
     const serviceID = "service_japraninbiz";
@@ -13,6 +26,7 @@ function sendMail() {
     emailjs
         .send(serviceID, templateID, params)
         .then((res) => {
+            // Clear the input fields after sending the email
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
             document.getElementById("number").value = "";
