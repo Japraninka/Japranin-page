@@ -1122,7 +1122,13 @@ button:hover {
 }
 
 
-
+@media screen and (max-width: 360px) {
+  .contact__wrapper { /*ovo treba zameniti za rows u @media*/
+  display: grid;
+  grid-template-rows: repeat(2, 1fr) ;
+  grid-gap: 30px; 
+  }
+}
 
 
 
