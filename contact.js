@@ -7,7 +7,7 @@ function sendMail() {
 
     // Check if any of the required fields is empty
     if (!name || !email || !number || !message) {
-        alert("Bitte füllen Sie alle Pflichtfelder aus.");
+        alert("Bitte füllen Sie alle nötige Pfelder aus.");
         return;
     }
 
