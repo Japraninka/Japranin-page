@@ -6,10 +6,13 @@ function sendMail() {
     var message = document.getElementById("message").value;
 
     // Check if any of the required fields is empty
-    if (!name || !email || !number || !message) {
-        alert("Bitte füllen Sie alle nötige Pfelder aus.");
+
+    if (!name.trim() || !email.trim() || !number.trim() || !message.trim()) {
+        alert("Bitte füllen Sie alle nötige Felder aus.");
         return;
     }
+
+
 
 
     // All required fields are filled, proceed with sending the email
