@@ -82,7 +82,7 @@ fa.gem {
     top: -1000px;
     opacity: 0;
     transition: all 0.5 ease;
-    height: 110vh;
+    height: 150vh;
     z-index: -1;
     background: #91c840;
   }
