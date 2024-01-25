@@ -18,7 +18,7 @@ body {
   font-size: 1.2rem; /*1 rem = 16px*/
   position: sticky;
   top: 0;
-  z-index: 999; /* high but its to insure its alweys on top*/
+  z-index: 999; /* high but its to insure its always on top*/
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -82,7 +82,7 @@ fa.gem {
     top: -1000px;
     opacity: 0;
     transition: all 0.5 ease;
-    height: 70vh;
+    height: 110vh;
     z-index: -1;
     background: #91c840;
   }
