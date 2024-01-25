@@ -323,8 +323,8 @@ fa.gem {
 
 .services__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr ;
 }
 
 .services__card {
@@ -363,12 +363,6 @@ fa.gem {
   color: #ffffff;
 }
 
-.services__card:nth-child(4) {
-  background-image: url("/images/ostalo_card.jpg");
-  background-size: cover;
-  position: relative;
-  color: #ffffff;
-}
 
 .services__card h2 {
   text-align: center;
