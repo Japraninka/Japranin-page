@@ -323,7 +323,7 @@ fa.gem {
 
 .services__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   grid-template-rows: 1fr 1fr;
 }
 
@@ -354,28 +354,16 @@ fa.gem {
   color: #ffffff;
 }
 
+
+
 .services__card:nth-child(3) {
-  background-image: url("/images/cleaning.jpg");
-  background-size: cover;
-  position: relative;
-  color: #ffffff;
-}
-
-.services__card:nth-child(4) {
-  background-image: url("/images/moving_card.jpg");
-  background-size: cover;
-  position: relative;
-  color: #ffffff;
-}
-
-.services__card:nth-child(5) {
   background-image: url("/images/snow_card.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
 }
 
-.services__card:nth-child(6) {
+.services__card:nth-child(4) {
   background-image: url("/images/ostalo_card.jpg");
   background-size: cover;
   position: relative;
