@@ -93,7 +93,7 @@ fa.gem {
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 70vh;
+    height: 90vh;
     font-size: 1.6rem;
   }
 
@@ -1018,7 +1018,7 @@ fa.gem {
 }
 
 .contact__container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -1041,7 +1041,21 @@ fa.gem {
 
 .form__group {
   margin-bottom: 20px;
+  display: flex; /* Add flex display to keep elements in the same row */
+  align-items: center; /* Align items vertically in the center */
 }
+
+input[type="checkbox"] {
+  margin: 0; /* Reset margin to remove default spacing */
+  margin-right: 5px; /* Add a small margin between the checkbox and label */
+}
+
+label {
+  white-space: nowrap; /* Prevent text from breaking into multiple lines */
+  color: #000000;
+}
+
+
 
 input,
 textarea {
