@@ -5,15 +5,18 @@ function sendMail() {
     var number = document.getElementById("number").value;
     var message = document.getElementById("message").value;
 
-    // Check if any of the required fields is empty
+    // Check if the consent checkbox is checked
+    var consentCheckbox = document.getElementById("consent");
+    if (!consentCheckbox.checked) {
+        alert("Bitte stimmen Sie den Datenschutzbestimmungen zu, um die Nachricht zu senden.");
+        return;
+    }
 
+    // Check if any of the required fields is empty
     if (!name.trim() || !email.trim() || !number.trim() || !message.trim()) {
         alert("Bitte füllen Sie alle nötige Felder aus.");
         return;
     }
-
-
-
 
     // All required fields are filled, proceed with sending the email
     var params = {
@@ -34,6 +37,8 @@ function sendMail() {
             document.getElementById("email").value = "";
             document.getElementById("number").value = "";
             document.getElementById("message").value = "";
+            // Uncheck the consent checkbox after sending the email (optional)
+            consentCheckbox.checked = false;
             console.log(res);
             alert("Ihre Nachricht wurde erfolgreich gesendet");
         })
