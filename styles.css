@@ -292,8 +292,7 @@ fa.gem {
     margin: 2rem 0;
   }
 }
-
-/*Services CSS*/
+/* Services CSS */
 .services {
   display: flex;
   flex-direction: column;
@@ -324,12 +323,13 @@ fa.gem {
 .services__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr ;
+  grid-template-rows: 1fr;
 }
 
 .services__card {
+  position: relative; /* Add this line to establish a positioning context for absolute positioning */
   margin: 10px;
-  height: 550px;
+  height: 450px;
   width: 300px;
   border-radius: 4px;
   display: flex;
@@ -342,35 +342,29 @@ fa.gem {
     ),
     url("/images/garten_man.jpg");
   background-size: cover;
-  position: relative;
   color: #ffffff;
   transition: 0.3s ease-in;
+}
+
+.services__card h2 {
+  text-align: center;
+  position: absolute;
+  top: 50%; /* Adjust as needed to position the h2 in the desired vertical position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the h2 is above other elements in the card */
 }
 
 .services__card:nth-child(2) {
   background-image: url("/images/vizitka.jpg");
   background-size: cover;
-  position: relative;
   color: #ffffff;
 }
-
-
 
 .services__card:nth-child(3) {
   background-image: url("/images/winter.jpg");
   background-size: cover;
-  position: relative;
   color: #ffffff;
-}
-
-
-.services__card h2 {
-  text-align: center;
-}
-.services__btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
 }
 
 .services__card button {
@@ -803,7 +797,7 @@ fa.gem {
 }
 .galerie__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
@@ -970,17 +964,7 @@ fa.gem {
   color: #ffffff;
 }
 
-.galerie__card:nth-child(14) {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgb(20, 20, 20, 0.5) 100%
-    ),
-    url("/images/slika14.jpg");
-  background-size: cover;
-  position: relative;
-  color: #ffffff;
-}
+
 
 .galerie__card h2 {
   text-align: center;
