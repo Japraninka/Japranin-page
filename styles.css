@@ -329,7 +329,7 @@ fa.gem {
 
 .services__card {
   margin: 10px;
-  height: 425px;
+  height: 550px;
   width: 300px;
   border-radius: 4px;
   display: flex;
@@ -340,7 +340,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/garten_card.jpg");
+    url("/images/garten_man.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -348,7 +348,7 @@ fa.gem {
 }
 
 .services__card:nth-child(2) {
-  background-image: url("/images/haus.jpg");
+  background-image: url("/images/vizitka.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -357,7 +357,7 @@ fa.gem {
 
 
 .services__card:nth-child(3) {
-  background-image: url("/images/snow_card.jpg");
+  background-image: url("/images/winter.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
