@@ -342,7 +342,7 @@ fa.gem {
     ),
     url("/images/garten_man.jpg");
   background-size: cover;
-  color: #282db9;
+  color: #ffffff;
   transition: 0.3s ease-in;
 }
 
@@ -364,7 +364,7 @@ fa.gem {
 .services__card:nth-child(3) {
   background-image: url("/images/winter.jpg");
   background-size: cover;
-  color: #282db9;
+  color: #91c840;
 }
 
 .services__card button {
