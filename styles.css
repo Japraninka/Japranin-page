@@ -338,7 +338,7 @@ fa.gem {
   background-image: linear-gradient(
       /* ovo mozs promeniti to je da zatamni sliku*/ to bottom,
       rgba(0, 0, 0, 0) 0%,
-      rgb(20, 20, 20, 0.5) 100%
+      rgb(20, 20, 20, 0.8) 100%
     ),
     url("/images/garten_man.jpg");
   background-size: cover;
