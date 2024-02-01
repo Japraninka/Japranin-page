@@ -355,22 +355,17 @@ fa.gem {
   z-index: 1; /* Ensure the h2 is above other elements in the card */
 }
 
-.services__card:nth-child(1) {
-  background-image: url("/images/garten_man.jpg");
-  background-size: cover;
-  color: #ffffff;
-}
 
 .services__card:nth-child(2) {
   background-image: url("/images/vizitka.jpg");
   background-size: cover;
-  color: #282db9;
+  color: #ffffff;
 }
 
 .services__card:nth-child(3) {
   background-image: url("/images/winter.jpg");
   background-size: cover;
-  color: #91c840;
+  color: #ffffff;
 }
 
 .services__card button {
