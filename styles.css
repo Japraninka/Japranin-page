@@ -804,7 +804,7 @@ fa.gem {
 .galerie__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .galerie__card {
@@ -820,7 +820,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/1.jpeg");
+    url("/images/slika1.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -832,7 +832,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/2.jpeg");
+    url("/images/slika2.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -844,7 +844,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/3.jpeg");
+    url("/images/slika3.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -856,7 +856,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/4.jpeg");
+    url("/images/slika4.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -868,7 +868,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/5.jpeg");
+    url("/images/slika5.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -880,7 +880,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/6.jpeg");
+    url("/images/slika6.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -892,7 +892,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/7.jpeg");
+    url("/images/slika7.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -904,7 +904,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/8.jpeg");
+    url("/images/slika8.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -916,7 +916,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/9.jpeg");
+    url("/images/slika9.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -928,7 +928,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/10.jpeg");
+    url("/images/slika10.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -940,7 +940,7 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/11.jpeg");
+    url("/images/slika11.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
@@ -952,7 +952,31 @@ fa.gem {
       rgba(0, 0, 0, 0) 0%,
       rgb(20, 20, 20, 0.5) 100%
     ),
-    url("/images/12.jpeg");
+    url("/images/slika12.jpg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.galerie__card:nth-child(13) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(20, 20, 20, 0.5) 100%
+    ),
+    url("/images/slika13.jpg");
+  background-size: cover;
+  position: relative;
+  color: #ffffff;
+}
+
+.galerie__card:nth-child(14) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(20, 20, 20, 0.5) 100%
+    ),
+    url("/images/slika14.jpg");
   background-size: cover;
   position: relative;
   color: #ffffff;
