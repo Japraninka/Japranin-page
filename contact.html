@@ -1,161 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japranin</title>
+    <link rel="stylesheet" href="styles.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Japranin</title>
-  <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/0f832d28d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="/images/logo_krug.png" type="image/x-icon" />
 
-  <script src="https://kit.fontawesome.com/0f832d28d8.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="/images/logo_krug.png" type="image/x-icon" />
+    <script src="contact.js" type="text/javascript"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("LSA0KUh4NVX6Dumgj");
+      })();
+    </script>
 
-  <script src="contact.js" type="text/javascript"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("LSA0KUh4NVX6Dumgj");
-    })();
-  </script>
+    <script
+      src="https://kit.fontawesome.com/0f832d28d8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <script src="https://kit.fontawesome.com/0f832d28d8.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <!--Navbar Section-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <img src="images/logo-no-background.png" alt="pic" id="navbar__logo" />
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> Home </a>
+          </li>
+          <li class="navbar__item">
+            <a href="/services.html" class="navbar__links">
+              Dienstleistungen
+            </a>
+          </li>
 
-<body>
-  <!--Navbar Section-->
-  <nav class="navbar">
-    <div class="navbar__container">
-      <img src="images/logo-no-background.png" alt="pic" id="navbar__logo" />
-      <div class="navbar__toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+          <li class="navbar__item">
+            <a href="/gallery.html" class="navbar__links"> Galerie </a>
+          </li>
+          <li class="navbar__item">
+            <a href="/contact.html" class="navbar__links">Kontakt</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about.html" class="navbar__links"> Über uns </a>
+          </li>
+          <li class="navbar__item">
+            <a href="/quiz.html" class="navbar__links"> Garten-Wissensquiz</a>
+          </li>
+        </ul>
       </div>
-      <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a href="/" class="navbar__links"> Home </a>
-        </li>
-        <li class="navbar__item">
-          <a href="/services.html" class="navbar__links"> Dienstleistungen </a>
-        </li>
-         
-        <li class="navbar__item">
-          <a href="/gallery.html" class="navbar__links"> Galerie </a>
-        </li> 
-        <li class="navbar__item">
-          <a href="/contact.html" class="navbar__links">Kontakt</a>
-        </li>
-        <li class="navbar__item">
-          <a href="/about.html" class="navbar__links"> Über uns </a>
-        </li>
-        <li class="navbar__item">
-          <a href="/policy.html" class="navbar__links"> Datenschutzerklärung</a>
-        </li>
-        <li class="navbar__item">
-          <a href="/impresum.html" class="navbar__links"> Impressum </a>
-        </li>
-      </ul>
+    </nav>
+
+    <!--Contact info-->
+
+    <div class="heading__galerie">
+      <h1>Kontakt</h1>
     </div>
-  </nav>
+    <section class="contact">
+      <div class="contact__container">
+        <div class="contact__wrapper">
+          <div class="contact__form">
+            <div class="form__group">
+              <input type="text" id="name" placeholder="Name" required /> <br />
+            </div>
+            <div class="form__group">
+              <input type="text" id="email" placeholder="E-mail" required />
+              <br />
+            </div>
+            <div class="form__group">
+              <input
+                type="text"
+                id="number"
+                placeholder="Telefonnummer"
+                required
+              />
+              <br />
+            </div>
+            <div class="form__group">
+              <textarea
+                id="message"
+                placeholder="Nachricht"
+                required
+              ></textarea>
+            </div>
 
-  <!--Contact info-->
+            <div class="form__group">
+              <input type="checkbox" id="consent" required />
+              <label for="consent"
+                >Ich stimme den Datenschutzbestimmungen zu</label
+              >
+            </div>
 
-  <div class="heading__galerie">
-    <h1> Kontakt </h1>
-  </div>
-  <section class="contact">
-    <div class="contact__container">
-
-      <div class="contact__wrapper">
-        
-        <div class="contact__form">
-          <div class="form__group">
-            <input type="text" id="name" placeholder="Name" required /> <br />
+            <button onclick="sendMail()">Senden</button>
           </div>
-          <div class="form__group">
-            <input type="text" id="email" placeholder="E-mail" required />
-            <br />
+
+          <div class="contact__info">
+            <h3>Unsere Info</h3>
+            <p>
+              E-mail: <br />
+              Japraninbiz@gmail.com
+            </p>
+            <p>
+              Telefonnummer: <br />
+              +49 172 9455169
+            </p>
+            <p>
+              Montag - Sonntag: <br />
+              24 Stunden
+            </p>
           </div>
-          <div class="form__group">
-            <input type="text" id="number" placeholder="Telefonnummer" required />
-            <br />
-          </div>
-          <div class="form__group">
-            <textarea id="message" placeholder="Nachricht" required></textarea>
-          </div>
-
-          <div class="form__group">
-            <input type="checkbox" id="consent" required /> 
-            <label for="consent">Ich stimme den Datenschutzbestimmungen zu</label>
-          </div>
-          
-          <button onclick="sendMail()">Senden</button>
-        </div>
-
-        <div class="contact__info">
-          <h3>Unsere Info</h3>
-          <p>E-mail: <br /> Japraninbiz@gmail.com</p>
-          <p>Telefonnummer: <br /> +49 172 9455169</p>
-          <p>Montag - Sonntag: <br /> 24 Stunden</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Section-->
-
-  <div class="footer__container">
-    <div class="footer__links">
-      <div class="footer__link--wrapper">
-        <div class="footer__link--items">
-          <h1>Japranin</h1>
-          <a href="/">Home</a>
-          <a href="services.html"> Dienstleistungen </a>
-          <a href="gallery.html"> Galerie </a>
-          <a href="about.html"> Über uns</a>
-          <a href="policy.html"> Datenschutzerklärung </a>
-          <a href="impresum.html"> Impressum</a>
-        </div>
-        <div class="footer__link--items">
-          <h1>Kontakt</h1>
-          <p>
-            Montag - Sonntag: <br />
-            24 Stunden
-          </p>
-          <p>E-mail: Japraninbiz@gmail.com</p>
-          <p>
-            Telefonnummer: <br />
-            +49 172 9455169
-          </p>
-          <a href="contact.html"> Kontakt </a>
-        </div>
-        <div class="footer__link--items">
-          <h1>Social Media</h1>
-          <a href="https://www.instagram.com/japraninnn/">Instagram</a>
-
-          <a href="https://www.facebook.com/profile.php?id=100093254499331">Facebook</a>
         </div>
       </div>
-    </div>
-    <div class="social__media">
-      <div class="social__media--wrap">
-        
-        <p class="website__rights">© Japranin 2023. All rights reserved</p>
-        <div class="social__icones">
-          <a href="https://www.facebook.com/profile.php?id=100093254499331" class="social__icones--link"
-            target="_blank">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://www.instagram.com/japraninnn/" class="social__icones--link" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
+    </section>
+
+    <!-- Footer Section-->
+
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h1>Japranin</h1>
+            <a href="/">Home</a>
+            <a href="services.html"> Dienstleistungen </a>
+            <a href="gallery.html"> Galerie </a>
+            <a href="about.html"> Über uns</a>
+            <a href="policy.html"> Datenschutzerklärung </a>
+            <a href="impresum.html"> Impressum</a>
+          </div>
+          <div class="footer__link--items">
+            <h1>Kontakt</h1>
+            <p>
+              Montag - Sonntag: <br />
+              24 Stunden
+            </p>
+            <p>E-mail: Japraninbiz@gmail.com</p>
+            <p>
+              Telefonnummer: <br />
+              +49 172 9455169
+            </p>
+            <a href="contact.html"> Kontakt </a>
+          </div>
+          <div class="footer__link--items">
+            <h1>Social Media</h1>
+            <a href="https://www.instagram.com/japraninnn/">Instagram</a>
+
+            <a href="https://www.facebook.com/profile.php?id=100093254499331"
+              >Facebook</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="social__media">
+        <div class="social__media--wrap">
+          <p class="website__rights">© Japranin 2023. All rights reserved</p>
+          <div class="social__icones">
+            <a
+              href="https://www.facebook.com/profile.php?id=100093254499331"
+              class="social__icones--link"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/japraninnn/"
+              class="social__icones--link"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="app.js"></script>
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>
