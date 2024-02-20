@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #91c840;
+  background-color: #d6f2e6;
 }
 
 .navbar {
@@ -300,7 +300,7 @@ fa.gem {
   align-items: center;
   height: 100%;
   padding: 5rem 0;
-  background-color: #91c840;
+  background-color: #d6f2e6;
 }
 
 .services h1 {
@@ -354,7 +354,6 @@ fa.gem {
   transform: translate(-50%, -50%);
   z-index: 1; /* Ensure the h2 is above other elements in the card */
 }
-
 
 .services__card:nth-child(2) {
   background-image: url("/images/vizitka.jpg");
@@ -415,7 +414,7 @@ fa.gem {
 
 /*Footer CSS*/
 .footer__container {
-  background-color: #91c840;
+  background-color: #d6f2e6;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -798,8 +797,8 @@ fa.gem {
 }
 .galerie__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1f;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .galerie__card {
@@ -821,6 +820,7 @@ fa.gem {
   color: #ffffff;
   transition: 0.3s ease-in;
 }
+
 .galerie__card:nth-child(2) {
   background-image: linear-gradient(
       to bottom,
@@ -965,8 +965,6 @@ fa.gem {
   color: #ffffff;
 }
 
-
-
 .galerie__card h2 {
   text-align: center;
 }
@@ -1021,7 +1019,7 @@ fa.gem {
 
 .contact {
   min-height: 80vh;
-  background-color: #91c840;
+  background-color: #bde5d0;
   padding: 50px;
   text-align: center;
 }
@@ -1064,8 +1062,6 @@ label {
   color: #000000;
 }
 
-
-
 input,
 textarea {
   width: 100%;
@@ -1098,7 +1094,7 @@ button {
 
 .contact__info {
   text-align: left;
-  background-color:#91c840;
+  background-color: #d6f2e6;
   padding: 20px;
 }
 .contact__info h3 {
@@ -1122,16 +1118,111 @@ button {
     max-height: 200px;
     resize: vertical;
   }
-
 }
 
+/*impresum css*/
 
+.impresum__container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
 
+/*quiz css*/
 
+.box__container {
+  flex: 1 1 auto;
+}
 
+.box {
+  width: 100%;
+  padding: 10px;
+}
 
+.box .box_head {
+  padding: 15px;
+  color: #000000;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+}
 
+.box_head::before {
+  content: "+";
+  font-weight: 500;
+  position: absolute;
+  right: 20px;
+}
 
+.box.active .box_head::before {
+  content: "-";
+}
+.box .box_text {
+  background-color: white;
+  padding: 0px;
+  border-radius: 4px;
+  margin-top: 5px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.6s;
+}
 
+.box.active .box_text {
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 5px;
+  height: fit-content;
+  overflow: hidden;
+}
 
+.box:nth-child(3n - 2) .box_head {
+  background-color: #4caf50; /* Green for the first box */
+}
 
+.box:nth-child(3n - 1) .box_head {
+  background-color: #ffd700; /* Yellow for the second box */
+}
+
+.box:nth-child(3n) .box_head {
+  background-color: #ff6347; /* Red for the third box */
+}
+
+/*quiz tag css*/
+.tag__container {
+  flex: 0 0 auto;
+}
+
+.tag {
+  width: 100%;
+  padding: 10px;
+}
+
+.tag .tag_head {
+  background-color: #333;
+  padding: 15px;
+  color: #ffffff;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tag.active .tag_head {
+  background-color: #282db9;
+}
+
+/*quiz wrapper css*/
+
+.container_quiz {
+  display: flex;
+  justify-content: center;
+}
+
+.box_wrapper {
+  display: flex;
+  gap: 20px; /* Adjust the gap between tags and boxes */
+  margin: 20px; /* Add margin for spacing around the wrapper */
+  max-width: 800px; /* Set a fixed maximum width */
+}
