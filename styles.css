@@ -191,16 +191,7 @@ fa.gem {
   font-weight: 700;
   color: white; /* Set text color to white */
   text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5); /* Add grey shadow */
-  background-image: linear-gradient(
-    to left,
-    #ffd700 0%, /* Start color: gold */
-    #ffe48c 100% /* End color: lighter gold */
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+
 }
 
 
