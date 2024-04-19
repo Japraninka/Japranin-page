@@ -185,10 +185,12 @@ fa.gem {
 }
 
 .hero__content p {
- margin-top: 1rem;
+  margin-top: 1rem;
   margin-right: 2rem;
   font-size: 2.4rem;
   font-weight: 700;
+  color: white; /* Set text color to white */
+  text-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5); /* Add grey shadow */
   background-image: linear-gradient(
     to left,
     #ffd700 0%, /* Start color: gold */
