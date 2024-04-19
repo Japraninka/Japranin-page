@@ -184,30 +184,22 @@ fa.gem {
   -moz-text-fill-color: transparent;
 }
 
-.hero__content p.gold-text {
-  margin-top: 0.5rem;
-  margin-right: 1rem;
-  font-size: 2.2rem;
-  font-weight: 700;
-  background-image: linear-gradient(
-    to left,
-    #ffd700 0%, /* Gold color start */
-    #ffe48c 100% /* Gold color end */
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-/* Additional styles for the paragraph with the gold text */
-.hero__content p.gold-text1 {
-  margin-top: 1rem;
+.hero__content p {
+ margin-top: 1rem;
   margin-right: 2rem;
   font-size: 2.4rem;
   font-weight: 700;
+  background-image: linear-gradient(
+    to left,
+    #ffd700 0%, /* Start color: gold */
+    #ffe48c 100% /* End color: lighter gold */
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-
 
 
 .hero__content p1 {
