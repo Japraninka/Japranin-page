@@ -189,17 +189,12 @@ fa.gem {
   margin-right: 1rem; /* Reduced margin for less white space */
   font-size: 2.2rem;
   font-weight: 700;
-  background-image: linear-gradient(
-    to left,
-    rgb(255, 215, 0) 0%, /* Gold color */
-    rgb(255, 240, 197) 100% /* Light gold color */
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  background-color: rgb(255, 215, 0); /* Solid gold color */
+  color: transparent; /* Hide text */
+  -webkit-background-clip: text; /* Clip background to text */
+  background-clip: text;
 }
+
 
 
 .hero__content .second-paragraph {
