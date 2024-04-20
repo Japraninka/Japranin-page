@@ -49,6 +49,7 @@ fa.gem {
     font-weight: 900;
     color: #2c5c94;
     margin-top: 10px;
+    white-space: nowrap;
 }
 
 
@@ -112,6 +113,7 @@ fa.gem {
   .navbar__title {
       font-weight: 700;
       margin-top: 5px;
+      white-space: normal;
     }
 
   .navbar__toggle .bar {
