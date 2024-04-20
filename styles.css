@@ -25,7 +25,7 @@ body {
 
 .navbar__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -113,6 +113,7 @@ fa.gem {
   .navbar__title {
       font-weight: 900;
       white-space: normal;
+      margin-right:25%;
     }
 
   .navbar__toggle .bar {
@@ -199,9 +200,7 @@ fa.gem {
 }
 
 .hero__content p {
-  margin-top: 1rem;
-  margin-right: 2rem;
-   margin-bottom: 0.5rem;
+  margin: 1rem;
   font-size: 2.4rem;
   font-weight: 700;
   color: white; /* Set text color to white */
