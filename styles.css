@@ -45,6 +45,15 @@ fa.gem {
   text-align: center;
 }
 
+.navbar__title {
+    margin-top: 10px;
+  }
+  
+  .navbar__title span {
+    font-weight: bold; 
+    color: blue; 
+  }
+
 .navbar__item {
   height: 80px;
 }
@@ -218,9 +227,13 @@ fa.gem {
 .button-text {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 30px; 
+  justify-content: center; 
 }
+
+.button-text p {
+  margin-bottom: 40px;
+}
+
 
 .arrow-right {
   margin-left: 5px;
