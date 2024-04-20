@@ -215,15 +215,6 @@ fa.gem {
   -moz-text-fill-color: transparent;
 }
 
-.button-text {
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-.arrow-right {
-  margin-left: 5px;
-}
-
 .hero__btn {
   font-size: 1.1rem;
   background-image: linear-gradient(
