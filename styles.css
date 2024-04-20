@@ -22,6 +22,7 @@ body {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
+
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -212,6 +213,15 @@ fa.gem {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+.button-text {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.arrow-right {
+  margin-left: 5px;
 }
 
 .hero__btn {
