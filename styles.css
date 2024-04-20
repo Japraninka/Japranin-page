@@ -98,9 +98,7 @@ fa.gem {
   }
 
   #navbar__logo {
-    padding-left: 25px;
-    width: 150px;
-    height: auto;
+    padding-left: 10px;
   }
 
   .navbar__toggle .bar {
