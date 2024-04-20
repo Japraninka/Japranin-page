@@ -109,6 +109,11 @@ fa.gem {
     margin-left: 10px;
   }
 
+  .navbar__title {
+      font-weight: 700;
+      margin-top: 5px;
+    }
+
   .navbar__toggle .bar {
     width: 25px;
     height: 3px;
