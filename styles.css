@@ -49,7 +49,7 @@ fa.gem {
     font-weight: 900;
     color: #2c5c94;
     white-space: nowrap;
-    margin-righ: inherit;
+    margin-right: 20%;
 }
 
 
@@ -114,6 +114,7 @@ fa.gem {
       font-weight: 900;
       white-space: normal;
       margin-right:25%;
+      margin-top: 0.5%;
     }
 
   .navbar__toggle .bar {
