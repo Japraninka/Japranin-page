@@ -1200,7 +1200,7 @@ input[type="checkbox"] {
 }
 
 label {
-  white-space: nowrap; /* Prevent text from breaking into multiple lines */
+  white-space: pre-line; /* Prevent text from breaking into multiple lines */
   color: #000000;
 }
 
@@ -1254,6 +1254,10 @@ button {
   .contact__wrapper {
     grid-template-columns: 1fr; /* Change layout to 1 column on smaller screens */
   }
+
+#concent {
+  width:fit-content;
+}
 
   textarea {
     min-height: 50px;
