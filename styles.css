@@ -1145,10 +1145,6 @@ fa.gem {
   transition: 0.2s ease-in;
 }
 
-#consent {
-  width:fit-content;
-}
-
 @media screen and (max-width: 1000px) {
   .galerie__wrapper {
     grid-template-columns: 1fr 1fr;
@@ -1201,6 +1197,7 @@ fa.gem {
 input[type="checkbox"] {
   margin: 0; /* Reset margin to remove default spacing */
   margin-right: 5px; /* Add a small margin between the checkbox and label */
+  width: fit-content;
 }
 
 label {
