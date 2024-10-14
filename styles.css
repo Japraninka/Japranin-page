@@ -1145,6 +1145,10 @@ fa.gem {
   transition: 0.2s ease-in;
 }
 
+#consent {
+  width:fit-content;
+}
+
 @media screen and (max-width: 1000px) {
   .galerie__wrapper {
     grid-template-columns: 1fr 1fr;
@@ -1254,10 +1258,6 @@ button {
   .contact__wrapper {
     grid-template-columns: 1fr; /* Change layout to 1 column on smaller screens */
   }
-
-#consent {
-  width:fit-content;
-}
 
   textarea {
     min-height: 50px;
