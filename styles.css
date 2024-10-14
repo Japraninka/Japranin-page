@@ -1255,7 +1255,7 @@ button {
     grid-template-columns: 1fr; /* Change layout to 1 column on smaller screens */
   }
 
-#concent {
+#consent {
   width:fit-content;
 }
 
