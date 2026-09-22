@@ -9,7 +9,7 @@
 (function () {
   "use strict";
 
-  var PUBLIC_KEY = "IHR_PUBLIC_KEY";
+  var PUBLIC_KEY = "LSA0KUh4NVX6Dumgj";
   var SERVICE_ID = "service_japraninbiz";
   var TEMPLATE_ID = "template_ilrgxwa";
 
