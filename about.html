@@ -1,147 +1,150 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japranin</title>
+    <link rel="stylesheet" href="styles.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Über uns – Japranin Heilbronn</title>
-  <meta name="description"
-    content="Marko Japranin über seine Arbeit: Gartenpflege, Hausmeisterservice und Winterdienst in Heilbronn." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="icon" href="images/logo_krug.png" type="image/png" />
-</head>
-
-<body>
-  <a class="skip-link" href="#main">Zum Inhalt springen</a>
-
-  <nav class="navbar">
-    <div class="navbar__container">
-      <a class="navbar__brand" href="index.html">
-        <img class="navbar__logo" src="images/logo-no-background.png" alt="Japranin" />
-        <span class="navbar__title">Japranin
-          <span>Gartenarbeit &amp; Hausmeisterservice</span>
-        </span>
-      </a>
-      <button class="navbar__toggle" id="mobile-menu" type="button" aria-expanded="false" aria-controls="nav-menu"
-        aria-label="Menü öffnen">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <ul class="navbar__menu" id="nav-menu">
-        <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
-        <li class="navbar__item"><a href="services.html" class="navbar__links">Dienstleistungen</a></li>
-        <li class="navbar__item"><a href="gallery.html" class="navbar__links">Galerie</a></li>
-        <li class="navbar__item"><a href="contact.html" class="navbar__links">Kontakt</a></li>
-        <li class="navbar__item"><a href="about.html" class="navbar__links" aria-current="page">Über uns</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <main id="main">
-    <header class="page-head">
-      <div class="wrap">
-        <h1>Über uns</h1>
-        <p>Ihr Gartenarbeits- und Hausmeisterservice in Heilbronn.</p>
-        <div class="page-head__rule"></div>
-      </div>
-    </header>
-
-    <section class="row">
-      <div class="row__media row__media--contain">
-        <img src="images/pic2.svg" alt="Marko Japranin bei der Arbeit" />
-      </div>
-      <div class="row__body">
-        <h2>Sehr geehrte Interessentin, sehr geehrter Interessent,</h2>
-        <p>mein Name ist Marko Japranin.</p>
-        <p>
-          Schon seit meiner Kindheit helfe ich meinem Vater im Garten und konnte dabei
-          umfangreiches Wissen und Erfahrung sammeln. Die Natur und die Gartenarbeit sind
-          meine Leidenschaft, und Qualität hat für mich höchste Priorität. Neben meiner
-          geliebten Tätigkeit biete ich auch Winterdienst und Hausmeisterservice an.
-        </p>
-        <p>Die folgenden Tätigkeiten führen wir professionell für Sie aus:</p>
-        <ul class="row__list">
-          <li>Bäume pflegen und zurückschneiden</li>
-          <li>Bäume entfernen</li>
-          <li>Baumstümpfe entfernen</li>
-          <li>Hecken schneiden</li>
-          <li>Hecken entfernen</li>
-          <li>Allgemeine Gartenpflege</li>
-          <li>Rasen mähen</li>
-        </ul>
-        <p>
-          Für eine Auftragsbesprechung erreichen Sie uns am besten über WhatsApp oder E-Mail.
-        </p>
-        <p class="signature">
-          Mit freundlichen Grüßen, Marko Japranin
-          <span>Japranin, Heilbronn</span>
-        </p>
-        <a class="btn btn--outline" href="contact.html">Auftrag besprechen</a>
-      </div>
-    </section>
-
-    <section class="cta-band">
-      <div class="cta-band__inner">
-        <div>
-          <h2>Lieber direkt sprechen?</h2>
-          <p>Rufen Sie an oder schreiben Sie uns eine Nachricht – wir melden uns zeitnah zurück.</p>
+    <script
+      src="https://kit.fontawesome.com/0f832d28d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="/images/logo_krug.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <img src="images/logo-no-background.png" alt="pic" id="navbar__logo" />
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <div class="cta-band__actions">
-          <a class="btn btn--primary" href="tel:+491729455169">+49 172 9455169</a>
-          <a class="btn btn--ghost" href="https://wa.me/491729455169" target="_blank" rel="noopener">Per WhatsApp
-            schreiben</a>
-        </div>
-      </div>
-    </section>
-  </main>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> Home </a>
+          </li>
+          <li class="navbar__item">
+            <a href="/services.html" class="navbar__links">
+              Dienstleistungen
+            </a>
+          </li>
 
-  <footer class="footer">
-    <div class="footer__inner">
-      <div>
-        <h2>Japranin</h2>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Dienstleistungen</a></li>
-          <li><a href="gallery.html">Galerie</a></li>
-          <li><a href="about.html">Über uns</a></li>
-          <li><a href="policy.html">Datenschutzerklärung</a></li>
-          <li><a href="impresum.html">Impressum</a></li>
+          <li class="navbar__item">
+            <a href="/gallery.html" class="navbar__links"> Galerie </a>
+          </li>
+          <li class="navbar__item">
+            <a href="/contact.html" class="navbar__links">Kontakt</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about.html" class="navbar__links"> Über uns </a>
+          </li>
         </ul>
       </div>
-      <div>
-        <h2>Kontakt</h2>
-        <p>Montag bis Sonntag, 24 Stunden</p>
-        <p><a href="mailto:japraninbiz@gmail.com">japraninbiz@gmail.com</a></p>
-        <p><a href="tel:+491729455169">+49 172 9455169</a></p>
-        <p><a href="contact.html">Zum Kontaktformular</a></p>
+    </nav>
+
+    <!--About us Section-->
+    <div class="heading__about">
+      <h1>Über uns</h1>
+      <p>Japranin - Ihr Gartenarbeits und Hausmeister Service in Heilbronn</p>
+    </div>
+    <div class="about__container">
+      <section class="about">
+        <div class="about__img">
+          <img src="images/pic2.svg" alt="/" />
+        </div>
+        <div class="about__content">
+          <h2>Sehr geehrte Interessentin,</h2>
+          <h2>sehr geehrter Interessent,</h2>
+          <p>
+            mein Name ist Marko Japranin. <br />
+            <br />
+
+            Schon seit meiner Kindheit helfe ich meinem Vater im Garten und
+            konnte dabei umfangreiches Wissen und Erfahrung sammeln. Die Natur
+            und die Gartenarbeit sind meine Leidenschaft, und Qualität hat für
+            mich höchste Priorität. Neben meiner geliebten Tätigkeit biete ich
+            auch Winterdienst und Hausmeisterservice an. Die folgenden
+            Tätigkeiten führen wir professionell für Sie aus:<br /><br />
+
+            Baum/Bäume pflegen, zurückschneiden, entfernen.<br />
+            Baumstumpf entfernen.<br />
+            Heckenschneiden.<br />
+            Hecke/n entfernen.<br />
+            Allgemeine Gartenpflege.<br />
+            Rasen mähen.
+            <br /><br />
+            Für eine Auftragsbesprechung kontaktieren Sie uns am besten über
+            Whatsapp oder E-Mail.<br />
+            <br />
+            Mit freundlichen Grüßen, <br />
+            Marko Japranin
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Section-->
+
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h1>Japranin</h1>
+            <a href="/">Home</a>
+            <a href="services.html"> Dienstleistungen </a>
+            <a href="gallery.html"> Galerie </a>
+            <a href="about.html"> Über uns</a>
+            <a href="policy.html"> Datenschutzerklärung </a>
+            <a href="impresum.html"> Impressum</a>
+          </div>
+          <div class="footer__link--items">
+            <h1>Kontakt</h1>
+            <p>
+              Montag - Sonntag: <br />
+              24 Stunden
+            </p>
+            <p>E-mail: Japraninbiz@gmail.com</p>
+            <p>
+              Telefonnummer: <br />
+              +49 172 9455169
+            </p>
+            <a href="contact.html"> Kontakt </a>
+          </div>
+          <div class="footer__link--items">
+            <h1>Social Media</h1>
+            <a href="https://www.instagram.com/japraninnn/">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100093254499331"
+              >Facebook</a
+            >
+          </div>
+        </div>
       </div>
-      <div>
-        <h2>Social Media</h2>
-        <p>Aktuelle Arbeiten sehen Sie bei uns auf Instagram und Facebook.</p>
-        <div class="footer__social">
-          <a href="https://www.facebook.com/profile.php?id=100093254499331" target="_blank" rel="noopener"
-            aria-label="Japranin auf Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/japraninnn/" target="_blank" rel="noopener"
-            aria-label="Japranin auf Instagram"><i class="fab fa-instagram"></i></a>
+      <div class="social__media">
+        <div class="social__media--wrap">
+          <p class="website__rights">© Japranin 2023. All rights reserved</p>
+          <div class="social__icones">
+            <a
+              href="https://www.facebook.com/profile.php?id=100093254499331"
+              class="social__icones--link"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/japraninnn/"
+              class="social__icones--link"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer__bottom">
-      <div>
-        <span>© <span data-year>2024</span> Japranin</span>
-        <span>Blumhardtstraße 24, 74080 Heilbronn</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="app.js"></script>
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>
